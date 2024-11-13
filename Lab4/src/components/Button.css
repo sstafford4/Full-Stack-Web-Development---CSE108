@@ -1,0 +1,43 @@
+button{
+    border: none;
+    background-color: rgb(204, 170, 105);
+    font-size: 24px;
+    color: rgb(99, 56, 27);
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #988558;
+}
+
+.equals{
+    grid-column: 3 / 5;
+    background-color: #808000;
+    color: black;
+
+}
+
+.equals:hover{
+    background-color: rgb(99, 56, 27);
+}
+
+.clear{
+    background-color: rgb(165, 91, 42);
+    color: black;
+}
+
+.clear:hover{
+    background-color: rgb(99, 56, 27);
+}
+
+
+.highlight{
+    background-color: #808000;
+}
+
+.operator{
+    background-color: rgb(226, 165, 84);
+}
