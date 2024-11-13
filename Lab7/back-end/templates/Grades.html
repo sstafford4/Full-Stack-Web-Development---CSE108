@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Lab 6</title>
+    <!-- only changed the way these link so that they work with the REST api-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='Styles.css') }}">
+    <script src="{{ url_for('static', filename='Grades.js') }}"></script>
+</head>
+
+<body class="mother">
+    <!-- The buttons to add a profile-->
+    <div class="adding">
+        <input name="addName" type="text" id="addName" placeholder="Enter Name">
+        <input name="addGrade" type="number" id="addGrade" placeholder="Enter Grade">
+        <button type="button" onclick="addStudent()">Add Student Profile</button>
+    </div>
+
+    <!-- The buttons to delete a profile-->
+    <div class="deleting">
+        <input name="delName" type="text" id="delName" placeholder="Enter student to delete">
+        <button type="button" onclick="deleteStudent()">Delete Student Profile</button>
+    </div>
+
+    <!-- The buttons to edit a profile-->
+    <div class="editing">
+        <input name="editName" type="text" id="editName" placeholder="Enter name of student">
+        <input name="editGrade" type="number" id="editGrade" placeholder="Enter updated grade">
+        <button type="button" onclick="editStudent()">Edit Student Profile</button>
+    </div>
+
+    <!-- buttons to view profiles-->
+    <div class="viewing">
+        <input type="text" id="viewName" placeholder="Enter student to view">
+        <button id="singleTable" onclick="viewStudent()">View Student Profile</button>
+        <table id="studTable">
+            <thead>
+                <!-- dynamically filled-->
+            </thead>
+            <tbody>
+                <!-- dynamically filled-->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="viewAll">
+        <button id="allTable" onclick="viewAll()">View All Profiles</button>
+        <table id="profTable">
+            <thead>
+                <!-- dynamically filled-->
+            </thead>
+            <tbody>
+                <!-- dynamically filled-->
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
