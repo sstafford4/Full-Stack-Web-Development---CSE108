@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Lab 5: True</title>
+        <link rel="stylesheet" href="Styles.css">
+        <script src="Grades.js"></script>
+    </head>
+
+    <body class="mother">
+
+        <!-- the buttons to add a profile-->
+        <div class="adding">
+            <input type="text" id="addName" placeholder="Enter Name">
+            <input type="number" id="addGrade" placeholder="Enter Grade">
+            <button onclick="addStudent()"> Add Student Profile</button>
+        </div>
+
+        <!-- the buttons to delete a profile-->
+        <div class="deleting">
+            <input type="text" id="delName" placeholder="Enter student to delete">
+            <button onclick="deleteStudent()"> Delete Student Profile</button>
+        </div>
+
+        <div class="editing">
+            <input type="text" id="editName" placeholder="Enter name of student">
+            <input type="number" id="editGrade" placeholder="Enter updated grade">
+            <button onclick="editStudent()"> Edit Student Profile</button>
+        </div>
+
+        <!-- buttons to view profiles-->
+         <div class="viewing">
+            <input type="text" id="viewName" placeholder="Enter student to view">
+            <button id="singleTable" onclick="viewStudent()"> View Student Profile</button>
+            <table id="studTable">
+                <thead>
+                    <!-- dynamically filled-->
+                </thead>
+                <tbody>
+                    <!-- going to dynamically add things to the table body-->
+                </tbody>
+            </table>
+         </div>
+
+         <div class="viewAll">
+            <button id="allTable" onclick="viewAll()"> View All Profiles</button>
+            <table id="profTable">
+                <thead>
+                    <!-- dynamically filled-->
+                </thead>
+                <tbody>
+                    <!-- going to dynamically add things to the table body-->
+                </tbody>
+            </table>
+         </div>
+    </body>
+</html>
