@@ -1,0 +1,1 @@
+{"John Smith": 78.3, "Jose Rodriguez": 91.2, "Susan Miller": 87.9, "Rahul Brahim": 86.2, "Amy Lee": 96.1, "Spencer Stafford": 70.0, "Jerilynn Banez": 40.5, "Malenia, Blade of Miquella": 99.0, "John Halo": 117.0, "John doe": 50.0}

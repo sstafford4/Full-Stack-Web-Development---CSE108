@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="styleRedo.css">
+</head>
+<body style="background-color: bisque;">
+    <div class="container">
+        <h3 class="header"> My calculator</h3>
+        <!-- Display -->
+        <input type="text" id="result" class="screen" readonly>
+
+        <!-- Buttons in a grid -->
+        <div class="keys">
+            <input type="button" value="7" class="buttons" onclick="display('7')">
+            <input type="button" value="8" class="buttons" onclick="display('8')">
+            <input type="button" value="9" class="buttons" onclick="display('9')">
+            <input type="button" value="/" class="operators" onclick="setOperator('/')">
+            
+            <input type="button" value="4" class="buttons" onclick="display('4')">
+            <input type="button" value="5" class="buttons" onclick="display('5')">
+            <input type="button" value="6" class="buttons" onclick="display('6')">
+            <input type="button" value="*" class="operators" onclick="setOperator('*')">
+
+            <input type="button" value="1" class="buttons" onclick="display('1')">
+            <input type="button" value="2" class="buttons" onclick="display('2')">
+            <input type="button" value="3" class="buttons" onclick="display('3')">
+            <input type="button" value="-" class="operators" onclick="setOperator('-')">
+
+            <input type="button" value="0" class="buttons" onclick="display('0')">
+            <input type="button" value="." class="buttons" onclick="display('.')">
+            <input type="button" value="=" class="equals" onclick="solve()">
+            <input type="button" value="+" class="operators" onclick="setOperator('+')">
+
+            <!-- Clear button -->
+            <input type="button" value="C" class="clear" onclick="clearScreen()">
+        </div>
+    </div>
+    <script src="redo.js"></script>
+</body>
+</html>

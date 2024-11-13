@@ -1,0 +1,193 @@
+.webpageHead{
+    text-align:center;
+    color: #FFA500;
+    font-size:30px;
+    font-family: sans-serif;
+} /* changes color, size, and font of everything in h1*/
+
+.table1 {
+    width: 75%; /*Ensures table goes full length of webpage*/
+    /* border-collapse: collapse; this command gets rid of the space between border cells, but i think i prefer the look with them*/
+    margin: 25px 0; /*adds 25px of space above and below the table*/
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*adds a slight shadow below the table, for visual differentiation*/
+    background-color: white;
+}
+
+/* Header row styles */
+.table1 thead tr {
+    background-color: #FFA500;
+    color: white;
+    text-align: left;
+}
+
+.table1 caption {
+    text-align: left;
+    color:#FFA500;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Cell padding and border */
+.table1 th,
+.table1 td {
+    padding: 12px 15px;
+    border: 2px solid #FFA500;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+/* Paragraph styles*/
+.paragraph1{
+    position: absolute;
+    right:20px; /* ive figured it out. position:absolute and right:280px to get it slightly to the right of the table*/
+    top:250px; /*for the top value, the closer to 0, the higher you get. current value sets it up to be right around where the table starts at the top.*/
+    width: 450px;
+    word-wrap: break-word; /*this prevents the text from going off the screen!*/
+
+    text-align: left;
+    color:#FFA500;
+    font-family: sans-serif;
+    font-size:15px;
+    font-weight: bold;
+}
+
+.paragraph2{
+    position: absolute;
+    right:20px; 
+    top:420px; 
+    width: 450px;
+    word-wrap: break-word; 
+
+    text-align: left;
+    color:#FFA500;
+    font-family: sans-serif;
+    font-size:15px;
+    font-weight: bold;
+}
+
+.paragraph3{
+    position: absolute;
+    right:20px; 
+    top:590px; 
+    width: 450px;
+    word-wrap: break-word; 
+
+    text-align: left;
+    color:#FFA500;
+    font-family: sans-serif;
+    font-size:15px;
+    font-weight: bold;
+}
+
+.paragraph4{
+    position: absolute;
+    right:20px; 
+    top:770px; 
+    width: 450px;
+    word-wrap: break-word; 
+
+    text-align: left;
+    color:#FFA500;
+    font-family: sans-serif;
+    font-size:15px;
+    font-weight: bold;
+}
+
+/* currently makes an unordered list below the paragraph 1 */
+/* Im going to make a homepage. I dont think I want this to be the homepage. */
+.list1 {
+    position:absolute;
+    right: 270px;
+    top: 80px;
+
+    text-align: left;
+    color: #FFA500;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+/*---------------------------------------------------------------------------------*/
+/* Navigation Bar*/
+.Navigation {
+    /* background-color: #333;
+    overflow: hidden; */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #333; /* Optional: For a full-width background */
+  }
+  
+  /* Style the links inside the navigation bar */
+  .Navigation a {
+    /* float: left;
+    width:100%;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px; */
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 17px;
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in the width */
+  }
+  
+  /* Change the color of links on hover */
+  .Navigation a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .Navigation a.active {
+    background-color: #b36206;
+    color: white;
+  }
+
+/*---------------------------------------------------------------------------------*/
+.video1 iframe{
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 250px;
+}
+
+.homeparagraph {
+    text-align: center;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 21px;
+    color: #b36206;
+
+    position: relative;
+    top: 200px
+}
+
+.intropara{
+    text-align: center;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: #b36206;
+
+    position: absolute;
+    right:660px; 
+    width: 600px;
+    word-wrap: break-word; 
+
+}
+
+.homepic img{
+    position: absolute;
+    right: 0px;
+    top: 200px;
+}

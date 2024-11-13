@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- this is just to fit the stuff on every screen ithink?-->
+        <meta charset="UTF-8"> <!-- this makes it so you can use special characters-->
+        <title> My calculator</title>
+        <!-- <script src="innercalc.js"></script> script tag links the javascript file to the html file -->
+        <link rel="stylesheet" href="stylecalc.css"> <!-- this links the css file-->
+    </head>
+
+    <body>
+        <table class="calculator">
+            <tr>
+                <td colspan='3'><input type='text' id='display' readonly></td>
+                <td><button onclick="clearDisplay()">C</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" onclick="appendToDisplay('1')">1</button></td>
+                <td><button class="number" onclick="appendToDisplay('2')">2</button></td>
+                <td><button class="number" onclick="appendToDisplay('3')">3</button></td>
+                <td><button class="operator" onclick="setOperator('/')">/</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" onclick="appendToDisplay('4')">4</button></td>
+                <td><button class="number" onclick="appendToDisplay('5')">5</button></td>
+                <td><button class="number" onclick="appendToDisplay('6')">6</button></td>
+                <td><button class="operator" onclick="setOperator('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" onclick="appendToDisplay('7')">7</button></td>
+                <td><button class="number" onclick="appendToDisplay('8')">8</button></td>
+                <td><button class="number" onclick="appendToDisplay('9')">9</button></td>
+                <td><button class="operator" onclick="setOperator('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button class="number" onclick="appendToDisplay('0')">0</button></td>
+                <td><button class="decimal" onclick="appendDecimal()">.</button></td>
+                <td><button onclick="calculate()">=</button></td>
+                <td><button class="operator" onclick="setOperator('+')">+</button></td>
+            </tr>
+        </table>
+        <script src="innercalc.js"></script> <!--script tag links the javascript file to the html file-->
+    </body>
+</html>
